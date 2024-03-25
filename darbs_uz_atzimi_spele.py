@@ -1,5 +1,7 @@
 from random import randint
-from colorama import Fore, Style
+TGREEN =  '\033[32m'
+ENDC = '\033[m'
+TRED = '\033[31m'
 
 pareizas_atbildes = 0
 
@@ -12,11 +14,11 @@ def atminet_vardu(dziesmas_teksts, pareizais_vards):
             minejums = input("Ievadiet savu minējumu: ")
             print("\t")
             if minejums.lower() == pareizais_vards.lower():
-                print(f"{Fore.GREEN}Pareizi!{Style.RESET_ALL}😎")
+                print(TGREEN + "Pareizi!😎", ENDC)
                 pareizas_atbildes += 1
                 print("\t")
             else:
-                print(f"{Fore.RED}Nepareizi{Style.RESET_ALL}👎 Pareizā atbilde ir:", pareizais_vards)
+                print(TRED + "Nepareizi👎", ENDC + "Pareizā atbilde ir:", pareizais_vards)
                 print("\t")
 
 dziesmas_teksts_1 = "Un es skrienu, skrienu vēl, man vēl ________"
