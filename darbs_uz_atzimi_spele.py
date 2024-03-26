@@ -4,9 +4,17 @@ ENDC = '\033[m'
 TRED = '\033[31m'
 
 pareizas_atbildes = 0
+spele_noteikumi = False
 
 def atminet_vardu(dziesmas_teksts, pareizais_vards):
     global pareizas_atbildes
+    global spele_noteikumi
+    print("\t")
+    print("\t")
+    if not spele_noteikumi:
+            print("Sveicināts dziesmu rindiņas viena trūkstošā vārda spēlē! Tev vajadzēs ievadīt savu minējumu atkarība no dziesmas teksta! Kopa ir 8 jautājumi. \n")
+            spele_noteikumi = True
+        
     vardi = dziesmas_teksts.split()
     for i, vards in enumerate(vardi):
         if '_' in vards:
