@@ -53,6 +53,12 @@ pareizais_vards_7 = "latvi"
 dziesmas_teksts_8 = "Sāp naktī ________ sirds"
 pareizais_vards_8 = "salauzta"   
 
+dziesmas_teksts_9 = "Kad dators izslēgts un ____ kluss"
+pareizais_vards_9 = "telefons"   
+
+dziesmas_teksts_10 = "_______ zeltene, tev jau tāpat viņa pukst - tiki tiki tiki tak"
+pareizais_vards_10 = "Meitene" 
+
 
 
 atminet_vardu(dziesmas_teksts_1, pareizais_vards_1)
@@ -63,6 +69,8 @@ atminet_vardu(dziesmas_teksts_5, pareizais_vards_5)
 atminet_vardu(dziesmas_teksts_6, pareizais_vards_6)
 atminet_vardu(dziesmas_teksts_7, pareizais_vards_7)
 atminet_vardu(dziesmas_teksts_8, pareizais_vards_8)
+atminet_vardu(dziesmas_teksts_9, pareizais_vards_9)
+atminet_vardu(dziesmas_teksts_10, pareizais_vards_10)
 
 print("Kopā pareizas atbildes:", pareizas_atbildes)
 
